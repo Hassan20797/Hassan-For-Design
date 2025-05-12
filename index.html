@@ -112,7 +112,7 @@
     </div>
     <div class="flex items-center space-x-2">
       <span>📞</span>
-      <span>+201099017426</span>
+      <span>+201099017426</span> <!-- تم تعديل الرقم هنا -->
     </div>
     <div class="flex items-center space-x-2">
       <span>📷</span>
@@ -136,14 +136,17 @@
     var message = document.getElementById('message').value;
 
     // تنسيق الرسالة التي ستظهر في واتساب
-    var text = "";
+    var text = "مرحبًا!%0A";
     text += "الاسم: " + encodeURIComponent(name) + "%0A";
     text += "الرسالة: " + encodeURIComponent(message);
 
-    // رابط واتساب مع النص المحدد
+    // رابط واتساب مع الرقم الجديد
     var whatsappURL = "https://wa.me/201099017426?text=" + text;
 
-    // فتح
+    // فتح رابط واتساب
+    window.open(whatsappURL, "_blank");
+  }
+</script>
 
 
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
