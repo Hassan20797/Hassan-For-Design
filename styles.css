@@ -1,0 +1,29 @@
+body {
+  background: linear-gradient(to bottom, #fdfbfb, #ebedee);
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #4c51bf;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+button {
+  transition: transform 0.2s ease;
+}
+
+img {
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
