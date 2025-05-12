@@ -120,10 +120,10 @@
     </div>
   </div>
 
-  <form action="https://wa.me/201099017426?text=مساء الخير عندي استفسار عن " method="get" class="space-y-4 pt-6" target="_blank">
-    <input type="text" name="name" placeholder="الاسم الكامل" class="w-full border border-gray-300 rounded-xl p-3 bg-white text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition">
-    <input type="email" name="email" placeholder="البريد الإلكتروني" class="w-full border border-gray-300 rounded-xl p-3 bg-white text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition">
-    <textarea name="message" placeholder="اكتب رسالتك هنا..." rows="4" class="w-full border border-gray-300 rounded-xl p-3 bg-white text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"></textarea>
+  <form id="whatsapp-form" class="space-y-4 pt-6" onsubmit="sendToWhatsApp(event)">
+    <input type="text" id="name" name="name" placeholder="الاسم الكامل" class="w-full border border-gray-300 rounded-xl p-3 bg-white text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition" required>
+    <input type="email" id="email" name="email" placeholder="البريد الإلكتروني" class="w-full border border-gray-300 rounded-xl p-3 bg-white text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition" required>
+    <textarea id="message" name="message" placeholder="اكتب رسالتك هنا..." rows="4" class="w-full border border-gray-300 rounded-xl p-3 bg-white text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition" required></textarea>
     <button type="submit" class="bg-indigo-600 text-white px-6 py-3 rounded-xl hover:bg-indigo-700 w-full transition transform hover:scale-105">إرسال الرسالة</button>
   </form>
 </section>
