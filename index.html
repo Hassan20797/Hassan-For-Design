@@ -108,7 +108,7 @@
   <div class="space-y-3">
     <div class="flex items-center space-x-2">
       <span>📧</span>
-      <span>hassan@example.com</span>
+      <span>Hassan For Design</span> <!-- تم تغيير النص هنا -->
     </div>
     <div class="flex items-center space-x-2">
       <span>📞</span>
@@ -122,7 +122,6 @@
 
   <form id="whatsapp-form" class="space-y-4 pt-6" onsubmit="sendToWhatsApp(event)">
     <input type="text" id="name" name="name" placeholder="الاسم الكامل" class="w-full border border-gray-300 rounded-xl p-3 bg-white text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition" required>
-    <input type="email" id="email" name="email" placeholder="البريد الإلكتروني" class="w-full border border-gray-300 rounded-xl p-3 bg-white text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition" required>
     <textarea id="message" name="message" placeholder="اكتب رسالتك هنا..." rows="4" class="w-full border border-gray-300 rounded-xl p-3 bg-white text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition" required></textarea>
     <button type="submit" class="bg-indigo-600 text-white px-6 py-3 rounded-xl hover:bg-indigo-700 w-full transition transform hover:scale-105">إرسال الرسالة</button>
   </form>
@@ -134,22 +133,17 @@
 
     // الحصول على البيانات من الحقول
     var name = document.getElementById('name').value;
-    var email = document.getElementById('email').value;
     var message = document.getElementById('message').value;
 
     // تنسيق الرسالة التي ستظهر في واتساب
     var text = "";
     text += "الاسم: " + encodeURIComponent(name) + "%0A";
-    text += "البريد الإلكتروني: " + encodeURIComponent(email) + "%0A";
     text += "الرسالة: " + encodeURIComponent(message);
 
     // رابط واتساب مع النص المحدد
     var whatsappURL = "https://wa.me/201099017426?text=" + text;
 
-    // فتح رابط واتساب
-    window.open(whatsappURL, "_blank");
-  }
-</script>
+    // فتح
 
 
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
