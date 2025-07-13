@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>السوشيال ميديا</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 p-6 space-y-10 font-sans">
+    <header class="text-center space-y-4">
+        <h1 class="text-3xl font-bold text-indigo-700">📚 مشاريع تصميم الكتب وأغلفتها</h1>
+        <p class="text-gray-600">مجموعة من أحدث مشاريع تصميم الكتب التي تم تنفيذها بإبداع واحترافية.</p>
+    </header>
+
+    <main class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-2xl shadow-md p-4 hover:shadow-xl transition">
+            <img src="/assets/book_project1.jpg" alt="مشروع 1" class="w-full h-48 object-cover rounded-lg mb-2">
+            <h2 class="text-lg font-semibold text-center">كتاب تطوير الذات</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-md p-4 hover:shadow-xl transition">
+            <img src="/assets/book_project2.jpg" alt="مشروع 2" class="w-full h-48 object-cover rounded-lg mb-2">
+            <h2 class="text-lg font-semibold text-center">رواية بعنوان بلا عنوان</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-md p-4 hover:shadow-xl transition">
+            <img src="/assets/book_project3.jpg" alt="مشروع 3" class="w-full h-48 object-cover rounded-lg mb-2">
+            <h2 class="text-lg font-semibold text-center">مجلة تعليمية للأطفال</h2>
+        </div>
+    </main>
+
+    <footer class="text-center text-sm text-gray-500 pt-8">
+        <a href="index.html"
+            class="inline-flex items-center gap-2 mt-6 text-indigo-700 border border-indigo-700 px-4 py-2 rounded-xl hover:bg-indigo-700 hover:text-white transition">
+            <span>🔙</span>
+            <span>العودة إلى الصفحة الرئيسية</span>
+        </a>
+    </footer>
+
+    <!-- زر عائم للتبديل بين الوضعين -->
+    <button id="toggle-dark"
+        class="fixed bottom-6 left-6 z-50 bg-indigo-600 text-white text-xl w-12 h-12 flex items-center justify-center rounded-full shadow-lg hover:bg-indigo-700 transition"
+        aria-label="تبديل الوضع">
+        🌙
+    </button>
+
+    <script>
+        const toggleBtn = document.getElementById('toggle-dark');
+
+        toggleBtn.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+            const isDark = document.documentElement.classList.contains('dark');
+            toggleBtn.innerHTML = isDark ? '☀️' : '🌙';
+        });
+    </script>
+
+</body>
+
+</html>

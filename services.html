@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>خدمات التصميم</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 p-6 space-y-10 font-sans">
+    <h1 class="text-2xl font-bold text-indigo-700">🌟 خدمات التصميم</h1>
+    <p>أقدّم مجموعة من خدمات التصميم التي تشمل أغلفة الكتب، الهويات البصرية، والسوشيال ميديا.</p>
+
+    <ul class="list-disc list-inside space-y-2">
+        <li>تصميم أغلفة الكتب الورقية والإلكترونية</li>
+        <li>تصميم داخلي للكتب والمجلات</li>
+        <li>منشورات سوشيال ميديا احترافية</li>
+        <li>تصميم هوية بصرية متكاملة</li>
+    </ul>
+
+    <!-- زر التحميل -->
+    <div class="pt-6">
+        <a href="files/قائمة-الأسعار.pdf" download
+            class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl hover:bg-indigo-700 transition">
+            📄 تحميل قائمة الأسعار (PDF)
+        </a>
+    </div>
+
+    <a href="index.html"
+        class="inline-flex items-center gap-2 mt-6 text-indigo-700 border border-indigo-700 px-4 py-2 rounded-xl hover:bg-indigo-700 hover:text-white transition">
+        <span>🔙</span>
+        <span>العودة إلى الصفحة الرئيسية</span>
+    </a>
+
+    <!-- زر عائم للتبديل بين الوضعين -->
+    <button id="toggle-dark"
+        class="fixed bottom-6 left-6 z-50 bg-indigo-600 text-white text-xl w-12 h-12 flex items-center justify-center rounded-full shadow-lg hover:bg-indigo-700 transition"
+        aria-label="تبديل الوضع">
+        🌙
+    </button>
+
+    <script>
+        const toggleBtn = document.getElementById('toggle-dark');
+
+        toggleBtn.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+            const isDark = document.documentElement.classList.contains('dark');
+            toggleBtn.innerHTML = isDark ? '☀️' : '🌙';
+        });
+    </script>
+
+</body>
+
+</html>

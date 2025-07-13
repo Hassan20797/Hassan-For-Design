@@ -1,156 +1,384 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Hassan For Design offers professional book cover design, social media graphics, and brand identities.">
+  <meta name="keywords" content="book design, cover design, social media design, brand identity">
   <title>Hassan For Design</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <!-- إضافة Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body class="text-gray-900 p-6 space-y-10 font-sans">
+
+<body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 p-6 space-y-10 font-sans">
+
   <!-- شريط التنقل العلوي -->
   <nav class="flex flex-col sm:flex-row justify-between items-center mb-6 border-b pb-4 space-y-4 sm:space-y-0">
     <ul class="flex space-x-4 space-x-reverse text-indigo-700 font-medium">
       <li><a href="#services" class="hover:underline">🌟 الخدمات</a></li>
-      <li><a href="#books" class="hover:underline">📚 تصميم الكتب</a></li>
-      <li><a href="#social" class="hover:underline">📱 السوشيال ميديا</a></li>
+      <li><a href="#books" class="hover:underline">📚 الكتب</a></li>
+      <li><a href="#Cover" class="hover:underline">📚 الغلاف</a></li>
+      <li><a href="#social" class="hover:underline">📱 ميديا</a></li>
       <li><a href="#testimonials" class="hover:underline">💬 الآراء</a></li>
       <li><a href="#contact" class="hover:underline">📞 تواصل</a></li>
     </ul>
     <div class="flex space-x-4 space-x-reverse text-indigo-600 text-lg">
-      <a href="#" aria-label="Instagram" class="text-xl"><i class="fab fa-instagram"></i></a>
-      <a href="#" aria-label="Facebook" class="text-xl"><i class="fab fa-facebook-f"></i></a>
-      <a href="#" aria-label="Behance" class="text-xl"><i class="fab fa-behance"></i></a>
-      <a href="#" aria-label="Dribbble" class="text-xl"><i class="fab fa-dribbble"></i></a>
+      <a href="https://www.facebook.com/Hassan.For.Design/" aria-label="Facebook" class="text-xl"><i
+          class="fab fa-facebook-f"></i></a>
+      <a href="https://www.facebook.com/groups/hassan.for.design" aria-label="Behance" class="text-xl"><i
+          class="fas fa-users"></i></a>
+      <a href="https://www.instagram.com/hassan_for_design/" aria-label="Instagram" class="text-xl"><i
+          class="fab fa-instagram"></i></a>
+      <a href="https://www.behance.net/hassan_For_Design" aria-label="Behance" class="text-xl"><i
+          class="fab fa-behance"></i></a>
+      <a href="https://wa.me/201099017426" aria-label="Behance" class="text-xl"><i class="fab fa-whatsapp"></i></a>
     </div>
   </nav>
 
-  <header class="text-center space-y-4" data-aos="zoom-in">
-    <img src="assets/logo-placeholder.png" alt="Hassan Logo" class="mx-auto w-24 h-24 rounded-full border-4 border-indigo-600 shadow-lg">
-    <h1 class="text-4xl font-bold text-indigo-700">Hassan For Design</h1>
-    <p class="text-lg text-gray-600 max-w-xl mx-auto">
-      مصمم متخصص في تصميم الكتب وأغلفة الكتب، أعمل على تحويل الأفكار إلى تصاميم بصرية جذابة واحترافية تساعد على جذب القارئ وتعبر عن مضمون المحتوى بدقة وأناقة.
-    </p>
-    <button class="mt-2 bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 shadow transition transform hover:scale-105">
-      تحميل المعرض PDF
-    </button>
+  <!-- قسم الغلاف الرئيسي -->
+  <header class="relative h-screen bg-cover bg-center flex items-center justify-center"
+    style="background-image: url('assets/header-bg.jpg');">
+    <div class="text-center text-white bg-black bg-opacity-50 p-6 rounded-xl space-y-4">
+      <img src="assets/logo-placeholder.png" alt="Hassan Logo"
+        class="mx-auto w-28 h-28 rounded-full border-4 border-white shadow-lg">
+      <h1 class="text-4xl md:text-5xl font-bold">Hassan For Design</h1>
+      <p class="text-lg max-w-xl mx-auto">مصمم محترف يقدم خدمات تصميم أغلفة الكتب، الهوية البصرية، وتصميمات السوشيال
+        ميديا.</p>
+    </div>
   </header>
 
-  <section id="services" data-aos="fade-up">
-    <h2 class="text-2xl font-semibold mb-4 text-indigo-600">🌟 خدمات التصميم</h2>
-    <ul class="list-disc list-inside text-gray-700 space-y-2">
+  <section id="services" class="scroll-mt-28 bg-white p-6 rounded-xl shadow-md space-y-6">
+
+    <h2 class="text-2xl font-semibold text-indigo-600">🌟 خدمات التصميم</h2>
+
+    <!-- شرح مختصر -->
+    <p class="text-gray-700 leading-relaxed">
+      أقدّم مجموعة متنوعة من خدمات التصميم الإبداعي التي تلبي احتياجات المؤلفين، العلامات التجارية، وأصحاب المشاريع.
+      من
+      تصميم الكتب إلى الهوية البصرية، أحرص على تنفيذ كل مشروع بأعلى درجات الجودة والاحترافية.
+    </p>
+
+    <!-- قائمة الخدمات -->
+    <ul class="list-disc list-inside text-gray-800 space-y-2">
       <li>تصميم أغلفة الكتب الورقية والإلكترونية</li>
       <li>تصميم داخلي للكتب والمجلات (تنسيق وترتيب الصفحات)</li>
       <li>تصميم منشورات سوشيال ميديا احترافية</li>
       <li>تصميم هوية بصرية للعلامات التجارية</li>
       <li>تحويل أفكار المؤلفين إلى تصاميم مرئية معبرة</li>
     </ul>
+
+    <!-- زر تحميل قائمة الخدمات -->
+    <div class="pt-4">
+      <a href="files/قائمة_الخدمات.pdf" download
+        class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl hover:bg-indigo-700 transition">
+        📄 تحميل قائمة الخدمات
+      </a>
+    </div>
   </section>
 
-  <section id="books" data-aos="fade-up">
-    <h2 class="text-2xl font-semibold mb-4 text-indigo-600">📚 تصميمات الكتب وأغلفتها</h2>
+
+  <section id="books" class="space-y-6">
+    <h2 class="text-2xl font-semibold text-indigo-600 text-center">📖 تصميمات الكتب</h2>
+
+    <div class="relative overflow-hidden max-w-7xl mx-auto">
+      <div id="books-slider" class="flex transition-transform duration-500">
+        <div class="card">
+          <img src="assets/book1.jpg" alt="تصميم 1" class="w-48 h-48 object-cover rounded-t-xl" />
+          <p class="p-2 text-sm text-gray-700">تصميم كتاب 1</p>
+        </div>
+        <div class="card">
+          <img src="assets/book1.jpg" alt="تصميم 1" class="w-full h-48 object-cover rounded-t-xl" />
+          <p class="p-2 text-sm text-gray-700">تصميم كتاب 1</p>
+        </div>
+        <div class="card">
+          <img src="assets/book1.jpg" alt="تصميم 1" class="w-full h-48 object-cover rounded-t-xl" />
+          <p class="p-2 text-sm text-gray-700">تصميم كتاب 1</p>
+        </div>
+        <div class="card">
+          <img src="assets/book1.jpg" alt="تصميم 1" class="w-full h-48 object-cover rounded-t-xl" />
+          <p class="p-2 text-sm text-gray-700">تصميم كتاب 1</p>
+        </div>
+        <div class="card">
+          <img src="assets/book1.jpg" alt="تصميم 1" class="w-full h-48 object-cover rounded-t-xl" />
+          <p class="p-2 text-sm text-gray-700">تصميم كتاب 1</p>
+        </div>
+        <div class="card">
+          <img src="assets/book1.jpg" alt="تصميم 1" class="w-full h-48 object-cover rounded-t-xl" />
+          <p class="p-2 text-sm text-gray-700">تصميم كتاب 1</p>
+        </div>
+      </div>
+
+      <!-- أسهم -->
+      <button onclick="slide('books', -1)"
+        class="absolute left-2 top-1/2 -translate-y-1/2 bg-indigo-600 text-white w-10 h-10 flex items-center justify-center rounded-full shadow hover:bg-indigo-700 transition duration-300 z-10"
+        aria-label="السابق">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+
+      <button onclick="slide('books', 1)"
+        class="absolute right-2 top-1/2 -translate-y-1/2 bg-indigo-600 text-white w-10 h-10 flex items-center justify-center rounded-full shadow hover:bg-indigo-700 transition duration-300 z-10"
+        aria-label="التالي">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+
+
+    </div>
+  </section>
+
+
+
+  <section id="Cover" class="scroll-mt-28 ..." data-aos="fade-up">
+    <h2 class="text-2xl font-semibold mb-4 text-indigo-600">
+      <a href="Cover.html" class="hover:underline">📚 تصميمات أغلفة الكتب</a>
+    </h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
       <div class="rounded-2xl shadow-md p-4 bg-white hover:shadow-xl transition duration-300">
-        <img src="assets/Free_Book_Mockup_7.jpg" alt="غلاف كتاب 1" class="w-full h-48 bg-gray-200 rounded-xl mb-2">
+        <img src="/assets/Free_Book_Mockup_7.jpg" alt="غلاف كتاب 1" class="w-full h-48 bg-gray-200 rounded-xl mb-2">
         <p class="text-center text-sm text-gray-500">نموذج غلاف كتاب 1</p>
       </div>
       <div class="rounded-2xl shadow-md p-4 bg-white hover:shadow-xl transition duration-300">
-        <img src="assets/Free_Book_Mockup_71.jpg" alt="غلاف كتاب 2" class="w-full h-48 bg-gray-200 rounded-xl mb-2">
+        <img src="/assets/Free_Book_Mockup_71.jpg" alt="غلاف كتاب 2" class="w-full h-48 bg-gray-200 rounded-xl mb-2">
         <p class="text-center text-sm text-gray-500">نموذج غلاف كتاب 2</p>
       </div>
       <div class="rounded-2xl shadow-md p-4 bg-white hover:shadow-xl transition duration-300">
-        <img src="assets/Free_Book_Mockup_7.jpg" alt="غلاف كتاب 3" class="w-full h-48 bg-gray-200 rounded-xl mb-2">
+        <img src="/assets/Free_Book_Mockup_72.jpg" alt="غلاف كتاب 3" class="w-full h-48 bg-gray-200 rounded-xl mb-2">
         <p class="text-center text-sm text-gray-500">نموذج غلاف كتاب 3</p>
       </div>
     </div>
   </section>
 
-  <section id="social" data-aos="fade-up">
-    <h2 class="text-2xl font-semibold mb-4 text-indigo-600">📱 تصميمات السوشيال ميديا</h2>
+  <section id="social" class="scroll-mt-28 ..." data-aos="fade-up">
+    <h2 class="text-2xl font-semibold mb-4 text-indigo-600">
+      <a href="social.html" class="hover:underline">📚 تصميمات الـSocial Media</a>
+    </h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
       <div class="rounded-2xl shadow-md p-4 bg-white hover:shadow-xl transition duration-300">
-        <img src="assets/Free_Book_Mockup_77.png" alt="تصميم سوشيال ميديا 4" class="w-full h-48 bg-gray-100 rounded-xl mb-2">
+        <img src="/assets/Free_Book_Mockup_77.png" alt="تصميم سوشيال ميديا 4"
+          class="w-full h-48 bg-gray-100 rounded-xl mb-2">
         <p class="text-center text-sm text-gray-500">تصميم سوشيال ميديا 4</p>
       </div>
       <div class="rounded-2xl shadow-md p-4 bg-white hover:shadow-xl transition duration-300">
-        <img src="assets/5836334.jpg" alt="تصميم سوشيال ميديا 5" class="w-full h-48 bg-gray-100 rounded-xl mb-2">
+        <img src="/assets/5836334.jpg" alt="تصميم سوشيال ميديا 5" class="w-full h-48 bg-gray-100 rounded-xl mb-2">
         <p class="text-center text-sm text-gray-500">تصميم سوشيال ميديا 5</p>
       </div>
       <div class="rounded-2xl shadow-md p-4 bg-white hover:shadow-xl transition duration-300">
-        <img src="assets/Free_Book_Mockup_7.jpg" alt="تصميم سوشيال ميديا 6" class="w-full h-48 bg-gray-100 rounded-xl mb-2">
+        <img src="/assets/Free_Book_Mockup_7.jpg" alt="تصميم سوشيال ميديا 6"
+          class="w-full h-48 bg-gray-100 rounded-xl mb-2">
         <p class="text-center text-sm text-gray-500">تصميم سوشيال ميديا 6</p>
       </div>
     </div>
   </section>
 
-  <section id="testimonials" data-aos="fade-up">
-    <h2 class="text-2xl font-semibold mb-4 text-indigo-600">💬 آراء العملاء</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-      <div class="rounded-2xl shadow-sm border border-gray-200 p-4 space-y-2 bg-white">
-        <p class="text-gray-700 italic">"خدمة ممتازة وسرعة في التنفيذ."</p>
-        <p class="text-right text-sm text-gray-500">- عميل رقم 1</p>
+  <section id="testimonials" class="scroll-mt-28 ..." data-aos="fade-up">
+    <h2 class="text-2xl font-semibold mb-4 text-indigo-600 text-center">💬 آراء العملاء</h2>
+
+    <div class="overflow-hidden relative max-w-2xl mx-auto">
+      <div id="testimonial-slider" class="flex transition-transform duration-500 ease-in-out">
+        <!-- بطاقة رأي 1 -->
+        <div class="min-w-full p-6 text-center bg-white rounded-xl shadow">
+          <img src="/assets/client1.jpg" alt="عميل 1"
+            class="w-20 h-20 mx-auto rounded-full mb-4 border-4 border-indigo-600">
+          <p class="text-gray-700 italic">"خدمة ممتازة وسرعة في التنفيذ."</p>
+          <p class="text-sm text-gray-500 mt-2">- عميل رقم 1</p>
+        </div>
+
+        <!-- بطاقة رأي 2 -->
+        <div class="min-w-full p-6 text-center bg-white rounded-xl shadow">
+          <img src="/assets/client2.jpg" alt="عميل 2"
+            class="w-20 h-20 mx-auto rounded-full mb-4 border-4 border-indigo-600">
+          <p class="text-gray-700 italic">"تصاميم احترافية تجاوزت التوقعات."</p>
+          <p class="text-sm text-gray-500 mt-2">- عميل رقم 2</p>
+        </div>
+
+        <!-- بطاقة رأي 3 -->
+        <div class="min-w-full p-6 text-center bg-white rounded-xl shadow">
+          <img src="/assets/client3.jpg" alt="عميل 3"
+            class="w-20 h-20 mx-auto rounded-full mb-4 border-4 border-indigo-600">
+          <p class="text-gray-700 italic">"أنصح بالتعامل مع حسن في جميع مشاريع التصميم."</p>
+          <p class="text-sm text-gray-500 mt-2">- عميل رقم 3</p>
+        </div>
       </div>
-      <div class="rounded-2xl shadow-sm border border-gray-200 p-4 space-y-2 bg-white">
-        <p class="text-gray-700 italic">"تصاميم احترافية تجاوزت التوقعات."</p>
-        <p class="text-right text-sm text-gray-500">- عميل رقم 2</p>
-      </div>
-      <div class="rounded-2xl shadow-sm border border-gray-200 p-4 space-y-2 bg-white">
-        <p class="text-gray-700 italic">"أنصح بالتعامل مع حسن في جميع مشاريع التصميم."</p>
-        <p class="text-right text-sm text-gray-500">- عميل رقم 3</p>
-      </div>
+
+      <!-- أزرار التنقل -->
+      <button onclick="moveSlide(-1)"
+        class="absolute left-0 top-1/2 -translate-y-1/2 bg-indigo-600 text-white p-2 rounded-full hover:bg-indigo-700">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+      <button onclick="moveSlide(1)"
+        class="absolute right-0 top-1/2 -translate-y-1/2 bg-indigo-600 text-white p-2 rounded-full hover:bg-indigo-700">
+        <i class="fas fa-chevron-left"></i>
+      </button>
     </div>
   </section>
 
-<section id="contact" class="bg-gradient-to-r from-indigo-600 to-indigo-800 text-white rounded-xl p-6 space-y-6 shadow-lg" data-aos="fade-up">
-  <h2 class="text-2xl font-semibold text-white">تواصل معي</h2>
-  <div class="space-y-3">
-    <div class="flex items-center space-x-2">
-      <span>📧</span>
-      <span>Hassan For Design</span> <!-- تم تغيير النص هنا -->
+  <script>
+    let currentSlide = 0;
+    const slider = document.getElementById("testimonial-slider");
+    const totalSlides = slider.children.length;
+
+    function moveSlide(direction) {
+      currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+      slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+    }
+  </script>
+
+
+  <section id="contact"
+    class="bg-gradient-to-r from-indigo-600 to-indigo-800 text-white rounded-xl p-6 space-y-6 shadow-lg" scroll-mt-28
+    ... data-aos="fade-up">
+    <h2 class="text-2xl font-semibold text-white">تواصل معي</h2>
+    <div class="space-y-3">
+      <div class="flex items-center space-x-2">
+        <span>📧</span>
+        <span>Hassan For Design</span> <!-- تم تغيير النص هنا -->
+      </div>
+      <div class="flex items-center space-x-2">
+        <span>📞</span>
+        <span>+201099017426</span> <!-- تم تعديل الرقم هنا -->
+      </div>
+      <div class="flex items-center space-x-2">
+        <span>📷</span>
+        <span>@hassan.design</span>
+      </div>
     </div>
-    <div class="flex items-center space-x-2">
-      <span>📞</span>
-      <span>+201099017426</span> <!-- تم تعديل الرقم هنا -->
-    </div>
-    <div class="flex items-center space-x-2">
-      <span>📷</span>
-      <span>@hassan.design</span>
-    </div>
+
+    <form id="whatsapp-form" class="space-y-4 pt-6" onsubmit="sendToWhatsApp(event)">
+      <input type="text" id="name" name="name" placeholder="الاسم الكامل"
+        class="w-full border border-gray-300 rounded-xl p-3 bg-white text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"
+        required>
+      <textarea id="message" name="message" placeholder="اكتب رسالتك هنا..." rows="4"
+        class="w-full border border-gray-300 rounded-xl p-3 bg-white text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"
+        required></textarea>
+      <button type="submit"
+        class="bg-indigo-600 text-white px-6 py-3 rounded-xl hover:bg-indigo-700 w-full transition transform hover:scale-105">إرسال
+        الرسالة</button>
+    </form>
+  </section>
+
+  <script>
+    function sendToWhatsApp(event) {
+      event.preventDefault(); // منع إرسال النموذج بالطريقة العادية
+
+      // الحصول على البيانات من الحقول
+      var name = document.getElementById('name').value;
+      var message = document.getElementById('message').value;
+
+      // تنسيق الرسالة التي ستظهر في واتساب
+      var text = "مرحبًا!%0A";
+      text += "الاسم: " + encodeURIComponent(name) + "%0A";
+      text += "الرسالة: " + encodeURIComponent(message);
+
+      // رابط واتساب مع الرقم الجديد
+      var whatsappURL = "https://wa.me/201099017426?text=" + text;
+
+      // فتح رابط واتساب
+      window.open(whatsappURL, "_blank");
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
+
+  <!-- زر عائم للتبديل بين الوضعين -->
+  <button id="toggle-dark"
+    class="fixed bottom-6 left-6 z-50 bg-indigo-600 text-white text-xl w-12 h-12 flex items-center justify-center rounded-full shadow-lg hover:bg-indigo-700 transition"
+    aria-label="تبديل الوضع">
+    🌙
+  </button>
+
+  <script>
+    const toggleBtn = document.getElementById('toggle-dark');
+
+    toggleBtn.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+      const isDark = document.documentElement.classList.contains('dark');
+      toggleBtn.innerHTML = isDark ? '☀️' : '🌙';
+    });
+  </script>
+
+  <!-- نافذة عرض الصورة (Lightbox) -->
+  <div id="image-modal" class="fixed inset-0 bg-black bg-opacity-80 hidden items-center justify-center z-50">
+    <img id="modal-img" src="" class="max-w-3xl max-h-[90vh] rounded-xl shadow-xl" />
+    <button onclick="closeImage()" class="absolute top-6 left-6 text-white text-2xl">✖</button>
   </div>
 
-  <form id="whatsapp-form" class="space-y-4 pt-6" onsubmit="sendToWhatsApp(event)">
-    <input type="text" id="name" name="name" placeholder="الاسم الكامل" class="w-full border border-gray-300 rounded-xl p-3 bg-white text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition" required>
-    <textarea id="message" name="message" placeholder="اكتب رسالتك هنا..." rows="4" class="w-full border border-gray-300 rounded-xl p-3 bg-white text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition" required></textarea>
-    <button type="submit" class="bg-indigo-600 text-white px-6 py-3 rounded-xl hover:bg-indigo-700 w-full transition transform hover:scale-105">إرسال الرسالة</button>
-  </form>
-</section>
+  <script>
+    // عند الضغط على أي صورة داخل الموقع
+    document.querySelectorAll('img').forEach(img => {
+      img.addEventListener('click', () => {
+        const modal = document.getElementById("image-modal");
+        const modalImg = document.getElementById("modal-img");
+        modalImg.src = img.src;
+        modal.classList.remove("hidden");
+        document.body.style.overflow = 'hidden'; // منع التمرير بالخلفية
+      });
+    });
 
-<script>
-  function sendToWhatsApp(event) {
-    event.preventDefault(); // منع إرسال النموذج بالطريقة العادية
-
-    // الحصول على البيانات من الحقول
-    var name = document.getElementById('name').value;
-    var message = document.getElementById('message').value;
-
-    // تنسيق الرسالة التي ستظهر في واتساب
-    var text = "مرحبًا!%0A";
-    text += "الاسم: " + encodeURIComponent(name) + "%0A";
-    text += "الرسالة: " + encodeURIComponent(message);
-
-    // رابط واتساب مع الرقم الجديد
-    var whatsappURL = "https://wa.me/201099017426?text=" + text;
-
-    // فتح رابط واتساب
-    window.open(whatsappURL, "_blank");
-  }
-</script>
+    // إغلاق العرض
+    function closeImage() {
+      document.getElementById("image-modal").classList.add("hidden");
+      document.body.style.overflow = 'auto';
+    }
+  </script>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script src="assets/script.js"></script>
-  <script>AOS.init();</script>
+  <script>
+    let bookIndex = 0;
+
+    function slideBooks(direction = 1) {
+      const slider = document.getElementById("books-slider");
+      const slideWidth = slider.children[0].offsetWidth + 16;
+      const totalSlides = slider.children.length;
+      const visibleCount = Math.floor(slider.parentElement.offsetWidth / slideWidth);
+
+      // تحديث المؤشر بشكل دائري (loop)
+      bookIndex = (bookIndex + direction + totalSlides) % totalSlides;
+
+      // إذا وصلنا إلى آخر صورة، نرجع للبداية تلقائيًا
+      if (bookIndex > totalSlides - visibleCount) {
+        bookIndex = 0;
+      }
+
+      slider.style.transform = `translateX(-${bookIndex * slideWidth}px)`;
+    }
+
+    // التحريك التلقائي كل 3 ثوانٍ
+    setInterval(() => slideBooks(1), 3000);
+  </script>
+
+
+
+  <script>
+    const sliders = {
+      books: { index: 0 },
+      covers: { index: 0 },
+      social: { index: 0 }
+    };
+
+    function slide(section, direction) {
+      const slider = document.getElementById(`${section}-slider`);
+      const cards = slider.querySelectorAll('.card');
+      const cardWidth = cards[0].offsetWidth + 16;
+      const maxIndex = cards.length - 5;
+
+      sliders[section].index += direction;
+      if (sliders[section].index > maxIndex) sliders[section].index = 0;
+      if (sliders[section].index < 0) sliders[section].index = maxIndex;
+
+      slider.style.transform = `translateX(-${sliders[section].index * cardWidth}px)`;
+    }
+
+    // تحريك تلقائي لكل قسم
+    setInterval(() => slide('books', 1), 4000);
+    setInterval(() => slide('covers', 1), 4000);
+    setInterval(() => slide('social', 1), 4000);
+  </script>
+
+
+
 </body>
+
 </html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>آراء العملاء</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 p-6 space-y-10 font-sans">
+    <!-- العنوان -->
+    <header class="text-center space-y-2">
+        <h1 class="text-3xl font-bold text-indigo-700">💬 آراء العملاء</h1>
+        <p class="text-gray-600 max-w-2xl mx-auto">لقطات شاشة حقيقية من عملاء عبّروا عن رضاهم بعد تنفيذ مشاريع تصميم
+            مختلفة</p>
+    </header>
+
+    <!-- شبكة الصور -->
+    <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
+            <img src="assets/testimonial1.jpg" alt="رأي عميل 1" class="w-full h-64 object-cover">
+        </div>
+        <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
+            <img src="assets/testimonial2.jpg" alt="رأي عميل 2" class="w-full h-64 object-cover">
+        </div>
+        <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
+            <img src="assets/testimonial3.jpg" alt="رأي عميل 3" class="w-full h-64 object-cover">
+        </div>
+        <!-- يمكنك إضافة المزيد بنفس الطريقة -->
+    </section>
+
+    <!-- زر العودة -->
+    <footer class="text-center pt-8">
+        <a href="index.html" class="text-indigo-600 hover:underline">🔙 العودة للصفحة الرئيسية</a>
+    </footer>
+
+    <!-- زر عائم للتبديل بين الوضعين -->
+    <button id="toggle-dark"
+        class="fixed bottom-6 left-6 z-50 bg-indigo-600 text-white text-xl w-12 h-12 flex items-center justify-center rounded-full shadow-lg hover:bg-indigo-700 transition"
+        aria-label="تبديل الوضع">
+        🌙
+    </button>
+
+    <script>
+        const toggleBtn = document.getElementById('toggle-dark');
+
+        toggleBtn.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+            const isDark = document.documentElement.classList.contains('dark');
+            toggleBtn.innerHTML = isDark ? '☀️' : '🌙';
+        });
+    </script>
+
+</body>
+
+</html>
