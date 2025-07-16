@@ -427,7 +427,7 @@ body.light-mode .social-icons a {
 
 .section-title {
     font-size: 2em;
-    color: #4f46e5;
+    color: #ffffff;
     font-weight: 600;
     margin-bottom: 18px;
 }
@@ -744,6 +744,7 @@ body.light-mode .social-icons a {
     bottom: 24px;
     left: 24px;
     background: #4f46e5;
+    /* نفس لون زر الصعود للأعلى */
     color: #fff;
     border-radius: 50%;
     width: 48px;
@@ -761,6 +762,7 @@ body.light-mode .social-icons a {
 
 .toggle-dark-btn:hover {
     background: #312e81;
+    /* نفس تأثير hover لزر الصعود للأعلى */
 }
 
 .dark .toggle-dark-btn {
@@ -843,8 +845,8 @@ body.light-mode .social-icons a {
 }
 
 .site-footer {
-    background: #181510;
-    color: #ffd700;
+    background: linear-gradient(90deg, #4f46e5 0%, #312e81 100%);
+    color: #fff;
     text-align: center;
     padding: 18px 0;
     font-size: 1.1em;
@@ -857,58 +859,197 @@ body.light-mode .social-icons a {
     color: #ffd700;
 }
 
-/* ...existing code... */
-.social-card,
-.cover-card,
-.slider-card,
-.testimonial-card {
-    transition: transform 0.3s, box-shadow 0.3s;
-    cursor: pointer;
+.site-footer.advanced-footer {
+    background: linear-gradient(90deg, #4f46e5 0%, #312e81 100%);
+    color: #fff;
+    padding: 32px 0 0 0;
+    font-size: 1.08em;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    direction: rtl;
+    border-top: 4px solid #fff;
+    box-shadow: 0 -2px 24px 0 rgba(79, 70, 229, 0.07);
 }
 
-.social-card:hover,
-.cover-card:hover,
-.slider-card:hover,
-.testimonial-card:hover {
-    transform: scale(1.05) rotate(-1deg);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+.dark .site-footer.advanced-footer {
+    background: #181510;
+    color: #ffd700;
+    border-top: 4px solid #ffd700;
 }
 
-/* حاوية موحدة للمحاذاة */
-.container {
+/* نصوص وأيقونات الفوتر في الوضع الساطع */
+.site-footer .footer-title,
+.site-footer .footer-col ul li a,
+.site-footer .footer-bottom.artistic-footer-bottom,
+.site-footer .footer-dot,
+.site-footer .footer-social-icons a {
+    color: #ffffff;
+    border-color: #fff;
+}
+
+.dark .site-footer .footer-title,
+.dark .site-footer .footer-col ul li a,
+.dark .site-footer .footer-bottom.artistic-footer-bottom,
+.dark .site-footer .footer-dot,
+.dark .site-footer .footer-social-icons a {
+    color: #ffd700;
+    border-color: #ffd700;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 32px;
     max-width: 1100px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 16px;
-    padding-left: 16px;
+    margin: 0 auto;
+    padding: 0 16px;
+    flex-wrap: wrap;
 }
 
-.nav-flex {
+.footer-col {
+    flex: 1 1 0;
+    min-width: 180px;
+    margin-bottom: 18px;
+    text-align: right;
+}
+
+.footer-title {
+    font-weight: bold;
+    font-size: 1.13em;
+    margin-bottom: 12px;
+    color: #ffd700;
+    letter-spacing: 0.5px;
+    border-right: 3px solid #ffd700;
+    padding-right: 8px;
+    background: linear-gradient(90deg, #ffd7001a 0%, #181510 100%);
+    border-radius: 0 8px 8px 0;
+    display: inline-block;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 7px;
+    text-align: right;
+}
+
+.footer-col ul li a {
+    color: #ffe9b0;
+    text-decoration: none;
+    transition: color 0.2s, border-bottom 0.2s;
+    font-size: 1em;
+    padding-bottom: 2px;
+    border-bottom: 1.5px solid transparent;
+}
+
+.footer-col ul li a:hover {
+    color: #fffbe6;
+    border-bottom: 1.5px solid #ffd700;
+    text-decoration: none;
+}
+
+.footer-social-icons {
+    display: flex;
+    gap: 14px;
+    margin-top: 6px;
+    justify-content: flex-start;
+}
+
+.footer-social-icons a {
+    color: #ffd700;
+    font-size: 1.4em;
+    background: #232946;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-    /* يمكنك التحكم في المسافة الجانبية هنا */
-    padding-right: 0;
-    padding-left: 0;
+    justify-content: center;
+    transition: background 0.2s, color 0.2s, transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+    border: 2px solid #ffd70033;
 }
 
-@media (min-width: 1200px) {
-    .container {
-        max-width: 1250px;
-        /* مثال: زيادة عرض الحاوية */
+/* عند الوقوف على أيقونات السوشيال في الفوتر في الوضع الساطع تصبح بيضاء */
+.site-footer .footer-social-icons a:hover {
+    background: #fff;
+    color: #232946;
+    transform: scale(1.13) rotate(-3deg);
+    box-shadow: 0 4px 16px #fff8;
+}
+
+/* في الوضع الداكن تبقى ذهبية كما هي */
+.dark .site-footer .footer-social-icons a:hover {
+    background: #ffd700;
+    color: #181510;
+    box-shadow: 0 4px 16px #ffd70044;
+}
+
+.footer-bottom.artistic-footer-bottom {
+    text-align: center;
+    color: #ffd700;
+    font-size: 1em;
+    padding: 18px 0 15px 0;
+    margin-top: 12px;
+    border-top: 1px solid #bfa14a;
+    background: none;
+    position: relative;
+    letter-spacing: 1.2px;
+}
+
+
+.footer-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #ffd700;
+    border-radius: 50%;
+    margin-right: 8px;
+    vertical-align: middle;
+    box-shadow: 0 0 8px #ffd70088;
+    animation: blink 2s infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
     }
 
-    .nav-flex {
-        padding-right: 32px;
-        padding-left: 32px;
+    50% {
+        transform: scale(1.18);
     }
 }
 
-/* إذا أردت تحكمًا أدق، يمكنك إضافة margin أو padding حسب الحاجة */
-.nav-links {
-    margin-right: 24px;
-    margin-left: 280px;
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+}
+
+@media (max-width: 900px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 18px;
+        text-align: right;
+    }
+
+    .footer-col {
+        min-width: 0;
+    }
 }
 
 /* ...existing code... */
@@ -1104,7 +1245,7 @@ body.light-mode .social-icons a {
 .whatsapp-modal-title {
     font-size: 1.3em;
     margin-bottom: 18px;
-    color: #25d366;
+    color: #4f46e5;
     font-weight: bold;
 }
 
@@ -1465,4 +1606,50 @@ body.light-mode .social-icons a {
 .dynamic-header-bg p,
 .dynamic-header-bg .social-icons a {
     color: inherit;
+}
+
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+section {
+    background-color: white;
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 900px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+h3 {
+    color: #2c3e50;
+    margin-top: 25px;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
